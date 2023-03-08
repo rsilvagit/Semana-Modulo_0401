@@ -10,25 +10,25 @@ namespace Bebidas
     public class Bebida
     {
         public int Id { get; set; }
-        public string Refrigerante { get; set; }
-        public string Suco { get; set; }
+        public string NomeTipo { get; set; }
         public decimal MiliLitro { get; set; }
         public string NomeBebida { get; set; }
         public decimal ValorCompra { get; set; }
        
-        public Bebida(int id, string refrigerate, string suco, decimal miliLitro, string nomeBebida,decimal valorCompra)
+        public Bebida(int id, string nomeTipo, decimal miliLitro, string nomeBebida,decimal valorCompra)
         {
             Id= id;
-            Refrigerante= refrigerate;
-            Suco= suco;
+            NomeTipo= nomeTipo;
             MiliLitro= miliLitro;
             NomeBebida= nomeBebida;
             ValorCompra= valorCompra;
-            public void Comprar()
+        }
+
+            public void Comprar(int id, decimal valorCompra)
         {
             Console.WriteLine($"Valor da compra do produto id {id} alterado para {valorCompra}");
         }
-        }
+        
         
 
     }
