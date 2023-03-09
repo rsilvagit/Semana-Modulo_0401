@@ -13,7 +13,7 @@ namespace Bebidas
        public string TipoCaixa { get; set; }
       
  
-        public Suco(string tipoCaixa,int id, string nomeTipo, decimal miliLitro, string nomeBebida, decimal valorCompra) : base (id,miliLitro, nomeBebida,valorCompra)
+        public Suco(string tipoCaixa,int id, string nomeTipo, decimal miliLitro, string nomeBebida, decimal valorCompra) : base (id,nomeTipo,miliLitro, nomeBebida,valorCompra)
         {
             TipoCaixa= tipoCaixa;   
         }
