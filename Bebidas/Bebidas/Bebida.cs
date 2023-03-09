@@ -29,8 +29,6 @@ namespace Bebidas
             Console.WriteLine($"Valor da compra do produto id {id} alterado para {valorCompra}");
         }
         
-        
-
     }
 
 }
