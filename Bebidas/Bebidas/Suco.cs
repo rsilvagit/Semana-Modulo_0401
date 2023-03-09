@@ -15,8 +15,14 @@ namespace Bebidas
  
         public Suco(string tipoCaixa,int id, string nomeTipo, decimal miliLitro, string nomeBebida, decimal valorCompra) : base (id,nomeTipo,miliLitro, nomeBebida,valorCompra)
         {
-            TipoCaixa= tipoCaixa;   
+            TipoCaixa= tipoCaixa;  
+            
+            public void ImprimirDados()
+        {
+                Console.WriteLine($"Oproduto id {id} é um suco é do tipo {tipoCaixa} com quantidade de Mililitros {miliLitro}");
+        }  
         }
+       
     }
 
 
