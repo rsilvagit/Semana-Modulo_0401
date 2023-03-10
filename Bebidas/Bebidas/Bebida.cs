@@ -8,7 +8,7 @@ using Bebidas;
 
 namespace Bebidas
 {
-    public class Bebida
+    abstract class Bebida
     {
         public int Id { get; set; }
         public string NomeTipo { get; set; }
@@ -20,7 +20,7 @@ namespace Bebidas
         {
 
         }
-        public Bebida(int id, string nomeTipo, decimal miliLitro, string nomeBebida,decimal valorCompra)
+        public abstract Bebida(int id, string nomeTipo, decimal miliLitro, string nomeBebida,decimal valorCompra)
         {
             Id= id;
             NomeTipo= nomeTipo;
